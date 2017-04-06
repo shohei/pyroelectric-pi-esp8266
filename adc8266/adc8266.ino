@@ -9,5 +9,5 @@ void setup() {
 void loop() {
   int value = system_adc_read();
   Serial.println("Value: " + String(value));
-  delay(1000);
+  delay(300);
 }
