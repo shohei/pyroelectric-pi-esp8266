@@ -32,7 +32,7 @@ void setup() {
 int value = 0;
 
 void loop() {
-  delay(5000);
+  delay(2000);
   ++value;
 
   Serial.print("connecting to ");

@@ -23,3 +23,11 @@ upload `human-sensor/human-sensor.ino` to the board
 |Reset Method	|nodemcu|
 |Upload Speed	|115200|
 
+# Materials
+### 焦電型赤外線（人感）センサーモジュール　ＳＢ４１２Ａ
+![](http://akizukidenshi.com/img/goods/L/M-09002.jpg)
+[http://akizukidenshi.com/catalog/g/gM-09002/](http://akizukidenshi.com/catalog/g/gM-09002/)
+
+### ESPr® Developer（ESP-WROOM-02開発ボード
+![](https://docid81hrs3j1.cloudfront.net/contents/large/25001_tTK67dP.jpg)
+[https://www.switch-science.com/catalog/2500/](https://www.switch-science.com/catalog/2500/)
