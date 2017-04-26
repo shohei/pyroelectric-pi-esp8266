@@ -1,0 +1,9 @@
+Call:  glm(formula = df)
+
+Coefficients:
+(Intercept)           V2
+     -4.190        1.049
+
+Degrees of Freedom: 10 Total (i.e. Null);  9 Residual
+Null Deviance:	    1100000
+Residual Deviance: 14.05 	AIC: 39.91
