@@ -30,4 +30,3 @@ post '/sensor/raw_data' do
   end
 end
 
-
