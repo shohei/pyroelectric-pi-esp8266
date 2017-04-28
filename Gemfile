@@ -1,3 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'httpclient'
+gem 'sinatra'
+gem 'sinatra-reloader'
+gem 'sinatra-activerecord'
+gem 'sqlite3'
+gem 'rake'
+gem 'timers', '~>2.0.0'
+gem 'pry'

@@ -7,10 +7,6 @@ const char* host = "192.168.100.9";
 const char* streamId   = "123";
 const char* privateKey = "0000";
 
-extern "C" {
-  #include "user_interface.h"
-}
-
 void setup() {
   Serial.begin(115200);
   delay(10);
@@ -29,11 +25,12 @@ void setup() {
   Serial.println(WiFi.localIP());
 }
 
-int value = 0;
+int value;
+int dpin = 12;
+int number = 1;
 
 void loop() {
   delay(2000);
-  ++value;
 
   Serial.print("connecting to ");
   Serial.println(host);
@@ -47,18 +44,13 @@ void loop() {
   }
   
   // We now create a URI for the request
-  String url = "/hello/shohei";
-  url += streamId;
-  url += "?private_key=";
-  url += privateKey;
-  url += "&value=";
-  url += value;
-  
+  String url = "/sensor/raw_data";
+
   Serial.print("Requesting URL: ");
   Serial.println(url);
 
-  int value = system_adc_read();
-  String data = "voltage=" + String(value);
+  int value = digitalRead(dpin);
+  String data = "voltage=" + String(value) + "&number=" + String(number);
 
   Serial.print("Requesting POST: ");
   // Send request to the server:
