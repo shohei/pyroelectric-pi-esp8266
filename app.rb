@@ -5,11 +5,11 @@ require 'sinatra/activerecord'
 require 'timers'
 require './model/sensor'
 
-class ActiveSupport::TimeWithZone
-    def as_json(options = {})
-        strftime('%Y-%m-%d %H:%M:%S')
-    end
-end
+# class ActiveSupport::TimeWithZone
+#     def as_json(options = {})
+#         strftime('%Y-%m-%d %H:%M:%S')
+#     end
+# end
 set :database, {adapter: "sqlite3", database: "rpi.sqlite3"}
 
 get '/' do

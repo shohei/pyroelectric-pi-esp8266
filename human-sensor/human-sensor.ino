@@ -1,9 +1,9 @@
 #include <ESP8266WiFi.h>
 
-const char* ssid     = "NU-SFC-2.4GHz";
-const char* password = "tanakalab";
+const char* ssid     = "****";
+const char* password = "****";
 
-const char* host = "192.168.100.9";
+const char* host = "192.168.1.106";//RPi
 const char* streamId   = "123";
 const char* privateKey = "0000";
 
